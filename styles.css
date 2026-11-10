@@ -1,0 +1,101 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #202020;
+color: #ffffff;
+line-height: 1.5;
+padding: 20px;
+}
+/* Container */
+.container {
+max-width: 1000px;
+margin: 0 auto;
+}
+/* Header */
+.header {
+background: #000000;
+border: 2px solid #ffffff;
+padding: 18px;
+margin-bottom: 18px;
+border-radius: 8px;
+text-align: center;
+}
+.header h1 { letter-spacing: 1px; font-size: 1.6rem; }
+.highlight { color: #ffffff; font-weight: 600; }
+/* Main layout */
+.main-area {
+display: flex;
+gap: 20px;
+align-items: flex-start;
+}
+/* Content */
+.content {
+flex: 2;
+background: #000000;
+border: 2px solid #e0e6ea;
+outline: 2px solid white;
+outline-offset: 5px;
+padding: 16px;
+border-radius: 10px;
+}
+.bio {
+background: #000000;
+border: 2px solid #e0e6ea;
+border-radius: 5px;
+padding: 5px;
+}
+/* Sidebar */
+.sidebar {
+flex: 1;
+background: #000000;
+border: 2px solid #e0e6ea;
+outline: 2px solid white;
+outline-offset: 5px;
+padding: 16px;
+border-radius: 6px;
+padding: 30px;
+}
+/* Profile card */
+.profile-card {
+display: flex;
+gap: 16px;
+align-items: center;
+border: 2px dashed #c8d5e8;
+border-radius: 8px;
+padding: 15px;
+margin-bottom: 14px;
+background: #000000;
+}
+.avatar {
+width: 96px;
+height: 96px;
+object-fit: cover;
+border-radius: 6px;
+border: 3px solid #dbe9ff;
+}
+/* Button */
+.contact-btn {
+margin-top: 8px;
+padding: 10px 12px;
+border: 2px solid #ffffff;
+border-radius: 4px;
+background: #000000;
+color: white;
+cursor: pointer;
+}
+/* Footer */
+.footer {
+text-align: center;
+margin-top: 16px;
+padding: 10px;
+font-size: 0.9rem;
+color: #555;
+}
+/* Responsive layout */
+@media (max-width: 700px) {
+.main-area {
+flex-direction: column;
+}
+.avatar { width: 72px; height: 72px; }
+}
